@@ -1,106 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <title>Portifólio Vanessa Camargo</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Decodificador ONE T6</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="logo" src="./assets/Logo_alura.png" alt="Logo Alura" />
+      </header>
 
-    <header class="cabecalho">
-        <nav class="cabecalho-menu">
-                <a class="cabecalho-menu-link" href="index.html">Home</a>
-                <a class="cabecalho-menu-link" href="formacoes.html">Formações e Cursos</a>
-                <a class="cabecalho-menu-link" href="experiencia.html">Experiência</a>
-                <a class="cabecalho-menu-link" href="projetos.html">Projetos</a>
-        </nav>
-    </header>
-
-      <main>
-        <section class="profile">
-            <div class="profile-container">
-            <h2 class="profile-title">Olá, meu nome é Vanessa Camargo especialista em e-commerce, otimização de conversão e gestão de projetos.</h2>
-            <p class="profile-text">Apaixonada por tecnologia e desenvolvimento de soluções digitais, possuo mais de uma década de experiência na área. 
-              Busco constantemente novos desafios e oportunidades para aprimorar minhas habilidades e contribuir para o sucesso das empresas.</
+      <div class="campo__input">
+        <div class="input">
+          <textarea
+            id="campo__input__texto"
+            rows="8"
+            cols="35"
+            placeholder="Digite seu texto aqui..."
+          ></textarea>
+          <p class="observacao">
+            <img src="assets/exclamacao.png" alt="Exclamacao"/>
+            Apenas letras minúsculas e sem acento.
           </p>
-            <ul class="profile-network">
-              <li class="profile-network-item"><a href="https://github.com/CamargoVanessa">Github <img class="profile-network-img" src="assets\github.png"></a></li>
-              <li class="profile-network-item"><a href="https://www.linkedin.com/in/vanessacamargo/">LinkedIn <img class="profile-network-img"  src="assets\linkedin.png"></a></li>
-            </ul>
-          </div>
-          <img class="profile-img" src="assets\profile.png">
-        </section>
-
-        <section class="sobremim">
-            <h3 class="about-title">Sobre mim</h3>
-            <p class="about-paragraph">Com mais de uma década de experiência na gestão estratégica de e-commerce, sou apaixonada por aproveitar oportunidades e promover aprendizado constante. Especializada em canais digitais e otimização de conversão, lidero equipes multidisciplinares, implementando projetos e identificando melhorias para impulsionar vendas. Meu conhecimento em marketing digital, métricas e gestão de operações me permite priorizar ações eficazes. Sou fluente em espanhol e tenho habilidades em idiomas adicionais. Acredito que relacionamentos sólidos são a chave para o sucesso. Estou pronta para enfrentar novos desafios e criar experiências excepcionais para os clientes.</p>
-        </section>
-
-        <section class="skills">
-            <h3 class="skills-title">Skills</h3>
-            <div class="skills-line">
-              <div>
-                <ul class="skills-box">
-                  <li class="skills-img"><img src="assets\adobe.png" alt=""> </li>
-                  <li class="skills-name">Adobe</li>
-                </ul>
-              </div>
-
-              <div>
-                <ul class="skills-box">
-                  <li class="skills-img"><img src="assets\html.png" alt=""> </li>
-                  <li class="skills-name"> Html 5</li>
-                </ul>
-              </div>
-              
-
-            <div>
-            <ul class="skills-box">
-              <li class="skills-img"><img src="assets\js_icon.png" alt=""> </li>
-              <li class="skills-name"> Javascript</li>
-            </ul>
-          </div>
-
-          <div>
-            <ul class="skills-box">
-              <li class="skills-img"><img src="assets\css_icon.png" alt=""> </li>
-              <li class="skills-name"> CSS</li>
-            </ul>
-          </div>
         </div>
-        </section>
 
-        <section class="hobbies">
-            <h3 class="hobbies-title">Hobbies</h3>
-            <div class="hobbies-line">
-              <div>
-                <ul class="hobbies-box">
-                  <li class="hobbies-img"><img src="assets\viagens_icon.png"></li>
-                  <li class="hobbies-name">Viajar</li>
-                </ul>
-              </div>
-
-             <div>
-                <ul class="hobbies-box">
-                  <li class="hobbies-img"><img src="assets\estudos_icon.png"></li>
-                  <li class="hobbies-name">Estudar</li>
-                </ul>
-              </div>
-        </section>
+        <div id="campo__resposta">
+          <img src="./assets/Lupa.png" alt="Menino com lupa" />
+          <h2>Nenhuma mensagem encontrada</h2>
+          <span
+            >Digite um texto que você deseja criptografar ou
+            descriptografar.</span
+          >
+        </div>
+      </div>
+      <div class="botoes">
+        <div class="campo__botoes">
+          <button onclick="criptografar()" class="botao__criptografar">
+            Criptografar
+          </button>
+          <button onclick="descriptografar()" class="botao__descriptografar">
+            Descriptografar
+          </button>
+        </div>
+      </div>
     </main>
-
     <footer>
-      <section class="rodapé">
-          <div class=" footer__rodape">
-          <p>2024 - Desenvolvido por Vanessa Camargo</p>
-          </div>
-      </section>
-  </footer>
+      <p class="rodape">Desenvolvido por Vanessa Camargo 2024</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
-  </html>
-
+</html>
